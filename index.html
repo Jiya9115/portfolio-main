@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo">
+            
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            </nav>
+            <div class="header-text">
+                <p>Frontend Developer</p>
+                <h1>Hi, I'm <span>Jiya Unadkat</span></h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                   
+                </div>
+                <div class="about-col-2">
+                    <h1>About Me</h1>
+                    <p>I’m a passionate coding enthusiast currently on the journey to become a full-stack developer. 
+                        With a strong interest in both frontend and backend technologies, 
+                        I’m continuously learning to build dynamic, user-friendly, and scalable web applications. 
+                        I enjoy solving problems through code and am committed to growing my skills
+                         through hands-on projects, collaboration, and continuous learning. </p>
+                         <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experiance')">Experiances</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                         </div>
+                         <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>C</span></li>
+                                <li><span>JAVA</span></li>
+                                <li><span>HTML</span></li>
+                                <li><span>CSS</span></li>
+                                <li><span>JAVA SCRIPT</span></li>
+                            </ul>
+                         </div>
+                         <div class="tab-contents " id="experiance">
+                            <ul>
+                                <li><span>Have made some projects<br> own my own and still working 
+                                    on <br>some projects.
+                                </span></li>
+                            </ul>
+                         </div>
+                         <div class="tab-contents " id="education">
+                            <ul>
+                                <li><span>Currently pursuing B.Tech Computer<br> Engineerng Degree
+                                    from <br>Marwadi Unviersity, Rajkot.
+                                </span></li>
+                            </ul>
+                         </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+    <div id="project">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="project1.jpeg">
+                    <div class="layer">
+                        <h3> Amazon Clone</h3>
+                        <p>Made clone of amzon home page with help of HTML and CSS</p>
+                    </div>
+                </div>
+                 <div class="work">
+                    <img src="project2.png">
+                    <div class="layer">
+                        <h3>Airline Reservation App</h3>
+                    <p> Made airline reservation app withhelp of JAVA and still is under process</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <h1 class="sub-title"> Contact Me</h1>
+            <div class="row">
+                <div class="contact-left">
+                    
+                    <p><i class="fa-solid fa-envelope"></i>unadkatjiya@gmail.com </p>
+                    <p><i class="fa-solid fa-phone"></i>9016246849</p>
+                    <div class="social-icons">
+                       <a href="https://www.instagram.com/jiya.unadkat?igsh=aXZ2ZDRpbGRtOTlq&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
+                       <a href="https://www.linkedin.com/in/jiya-unadkat-55647931a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="fa-brands fa-linkedin"></i></a>
+                       <a href="https://github.com/Jiya9115"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="container">
+            <div class="foot-content">
+                <p>Copyright &copy; Jiya Unadkat. All rights reserved.</p>
+            <p>Designed By Jiya Unadkat</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            
+             for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    
+</body>
+</html>
